@@ -1,0 +1,96 @@
+﻿@model SpletnaAplik.Models.ultratriatlon
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<h1>Ultra Triatlon Iskani Tekmovalec</h1>
+<br/>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.id)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.age_category)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.competitor)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.finish)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.trans1)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.trans2)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.country)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.swim)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.bike)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.run)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.overall)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @*@foreach (var item in Model)
+            {*@
+        <tr>
+            <td scope="row" >
+                @Html.DisplayFor(modelItem => Model.id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.rank)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.overall)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.competitor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.country)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.age_category)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.swim)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.trans1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.bike)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.trans2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.run)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.finish)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.comment)
+            </td>
+        </tr>
+        @*}*@
+    </tbody>
+</table>

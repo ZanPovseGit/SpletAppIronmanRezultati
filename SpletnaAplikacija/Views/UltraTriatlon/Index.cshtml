@@ -1,0 +1,155 @@
+﻿@model IEnumerable<SpletnaAplik.Models.ultratriatlon>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<h1>Ultra triatlon tekmovalci</h1>
+<div class="container-fluid">
+  <table border="2" class="table table-sm">
+   <tr>
+       <td>
+    <p>Top 10 tekmovalcev po času</p>
+    @using (Html.BeginForm())
+     {
+        <input type="submit" class="btn btn-light" asp-area="" asp-controller="UltraTriatlon" asp-action="Top10Tekm" value="Najboljsi">
+     }
+           </td>
+       <td>
+    <p>Povprečni časovi tekmovalcev</p>
+    @using (Html.BeginForm())
+     {
+        <input type="submit" class="btn btn-light" asp-area="" asp-controller="UltraTriatlon" asp-action="Povprecje" value="Isci">
+     }
+           </td>
+       </tr>
+  </table>
+</div>
+
+<div class="container-fluid">
+    <p>Iskanje tekmovalca po imenu</p>
+    @using (Html.BeginForm())
+     {
+        <input type="text" name="ime">
+        <input type="submit" class="btn btn-light" asp-area="" asp-controller="UltraTriatlon" asp-action="Tekmovalec" name="Isci" value="Isci tekmovalca">
+     }
+    <br/>
+    <table border="2" class="table table-sm">
+        <tr>
+            <td>
+                <p>Iskanje najbolsega plavalca</p>
+                @using (Html.BeginForm())
+                {
+                    <input type="submit" class="btn btn-light" asp-area="" asp-controller="UltraTriatlon" asp-action="Plavalec" name="Isci" value="Najboljsi plavalec">
+                }
+                </td>
+            <td>
+                <p>Iskanje najbolsega tekaca</p>
+                @using (Html.BeginForm())
+                {
+                    <input type="submit" class="btn btn-light" asp-area="" asp-controller="UltraTriatlon" asp-action="Tekac" name="Isci" value="Najboljsi tekač">
+                }
+                </td>
+            <td>
+            <p>Iskanje najbolsega Kolesarja</p>
+                @using (Html.BeginForm())
+                {
+                    <input type="submit" class="btn btn-light" asp-area="" asp-controller="UltraTriatlon" asp-action="Kolesar" value="Najboljsi kolesar">
+                }
+            </td>
+            </tr>
+        </table>
+</div>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.id)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.rank)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.overall)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.competitor)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.country)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.age_category)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.swim)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.trans1)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.bike)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.trans2)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.run)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.finish)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.comment)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td scope="row">
+                    @Html.DisplayFor(modelItem => item.id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.rank)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.overall)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.competitor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.country)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.age_category)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.swim)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.trans1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.bike)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.trans2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.run)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.finish)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.comment)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
