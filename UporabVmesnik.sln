@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UporabVmesnik", "UporabVmesnik\UporabVmesnik.csproj", "{E9B5FEE9-5EC8-46FC-B41A-B9F9D6C11841}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpletnaAplik", "SpletnaAplik\SpletnaAplik.csproj", "{B3AD90CD-8BC6-4B4E-AFEB-5E3C68EDDCC5}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Instaliraj", "Instaliraj\Instaliraj.vdproj", "{F5D093BF-BCB2-4BB8-ADFC-C28BCDE9CE31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9B5FEE9-5EC8-46FC-B41A-B9F9D6C11841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9B5FEE9-5EC8-46FC-B41A-B9F9D6C11841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9B5FEE9-5EC8-46FC-B41A-B9F9D6C11841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9B5FEE9-5EC8-46FC-B41A-B9F9D6C11841}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3AD90CD-8BC6-4B4E-AFEB-5E3C68EDDCC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3AD90CD-8BC6-4B4E-AFEB-5E3C68EDDCC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3AD90CD-8BC6-4B4E-AFEB-5E3C68EDDCC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3AD90CD-8BC6-4B4E-AFEB-5E3C68EDDCC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5D093BF-BCB2-4BB8-ADFC-C28BCDE9CE31}.Debug|Any CPU.ActiveCfg = Debug
+		{F5D093BF-BCB2-4BB8-ADFC-C28BCDE9CE31}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A72E0D0B-C286-4BFC-8987-F8CD38074AB7}
+	EndGlobalSection
+EndGlobal

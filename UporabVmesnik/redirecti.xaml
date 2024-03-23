@@ -1,0 +1,16 @@
+﻿<Window x:Class="UporabVmesnik.redirecti"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UporabVmesnik"
+        mc:Ignorable="d"
+        Title="redirecti" Height="248.451" Width="495.775">
+    <Grid>
+        <Button Content="Ironman"  FontWeight="Bold" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="209" Click="Button_Click" Height="80"/>
+        <Button Content="Ironman703" FontWeight="Bold" HorizontalAlignment="Left" Margin="247,10,0,0" VerticalAlignment="Top" Width="221" Click="Button_Click_1" Height="80"/>
+        <Button Content="Ultratriatlon" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,107,0,0" VerticalAlignment="Top" Width="209" Click="Button_Click_2" Height="82"/>
+        <Button Content="Osebe" HorizontalAlignment="Left" FontWeight="Bold" Margin="247,107,0,0" VerticalAlignment="Top" Width="221" Height="82" Click="Button_Click_3"/>
+
+    </Grid>
+</Window>
